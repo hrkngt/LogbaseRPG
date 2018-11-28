@@ -8,12 +8,12 @@ public class StatsBarManager : MonoBehaviour
 
 	public Slider HpBar;
 	public Slider MpBar;
-	private Player _player;
+	private BasePlayer _player;
 	
 	// Use this for initialization
 	void Start ()
 	{
-		_player = GameObject.Find("Player").GetComponent<Player>();
+		_player = GameObject.Find("Player").GetComponent<BasePlayer>();
 		HpBar.maxValue = _player.MaxHP;
 		MpBar.maxValue = _player.MaxMP;
 
