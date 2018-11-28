@@ -8,7 +8,7 @@ public class PlayerImageManager : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		gameObject.GetComponent<Image>().sprite = ImageLoader.GetSprite("player");
+		gameObject.GetComponent<Image>().sprite = GameObject.Find("Player").GetComponent<Character>().Icon;
 	}
 	
 	// Update is called once per frame
